@@ -101,6 +101,7 @@ def open_data():
     list_box.config(yscrollcommand = scroll_bar.set)
     scroll_bar.config(command = list_box.yview)
 
+#search for password and user relative to given webpage
 def search_data():
     try:
         with open("user_data.json","r") as search_file:
