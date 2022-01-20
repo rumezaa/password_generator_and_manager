@@ -75,6 +75,7 @@ def save_data():
                 data.write(f"{user} | {web} |  {passw}\n")
         #clear widgets regardless
         finally:
+            user_entry.delete(0,END)
             web_entry.delete(0,END)
             pass_entry.delete(0,END)
 
@@ -114,7 +115,7 @@ def search_data():
         user=search["email"]
         password=search["password"]
         print(user,password)
-        user_entry.delete()
+       
         user_entry.insert(END,user)
         pass_entry.insert(END,password)
 
